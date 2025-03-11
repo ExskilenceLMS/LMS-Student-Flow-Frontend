@@ -51,4 +51,6 @@ jobs:
         with:
           app-name: 'staging-exskilence'
           slot-name: 'Production'
+          package: ./build
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CD63DE0782ED43EC901208CC30EEDFCE }}
+      
