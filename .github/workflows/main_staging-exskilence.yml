@@ -25,8 +25,7 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-
-      
+         
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
@@ -52,5 +51,6 @@ jobs:
         with:
           app-name: 'staging-exskilence'
           slot-name: 'Production'
-          package: .
+          package: ./build
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CD63DE0782ED43EC901208CC30EEDFCE }}
+      
