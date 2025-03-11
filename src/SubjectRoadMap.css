@@ -1,0 +1,8 @@
+.roadmap-button {
+    background: linear-gradient(135deg, #3f48fd, #444dfa); 
+    border: none;
+    color: #000000;
+    border-radius: 10px;
+    padding: 5px 25px;
+    transition: background 0.2s ease-in-out;
+  }
